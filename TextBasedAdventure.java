@@ -74,7 +74,10 @@ public class TextBasedAdventure {
         }
     }
     public void cont(){
-        System.out.println("You have venutured to far and became lost, Good luck now you are dead");
+        if(hasShovel){
+            System.out.println("You can now dig out and safely leave, congrats!");
+        }
+        System.out.println("You have venutured to far and don't have a tool good luck getting out now.");
     }
 
     public void dig() {
